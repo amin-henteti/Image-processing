@@ -9,7 +9,8 @@ get-content -raw -path .\Desktop\config.json | ConvertFrom-Json
 key1                                                        key2
 ----                                                        ----
 prop                                                        par
-
+https://github.com/bongiovimatthew-microsoft/pscredentialWithCert/blob/master/PowerShell/ReadFromAnySmartcard.ps1
+https://4sysops.com/forums/topic/smartcard-runas-authentication/
 $x = get-content -raw -path .\Desktop\config.json | ConvertFrom-Json
 $x.key1
 $x.key2
