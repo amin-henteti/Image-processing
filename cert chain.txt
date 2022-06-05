@@ -1,4 +1,4 @@
-Generating SSL certificate chain in Linux
+The description of a video : "Generating SSL certificate chain in Linux" done by Kevin Faulkner
 This is a video guide on how to generate a root CA, intermediate CA and certificate signed by those, under Linux.
 https://www.lazytree.us/doku.php?id=b...
 ^ Blog entry about the video, or the direct content below
