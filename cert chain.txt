@@ -5,6 +5,8 @@ https://www.lazytree.us/doku.php?id=b...
 https://www.lazytree.us/doku.php?id=p...
 I plan on restructuring the blog so please don't rely on the direct link
 
+https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/smart-cards/smart-card-and-remote-desktop-services.md
+
 ===== Task: =====
 Generate a certificate chain with a private Certificate Authority.
 
