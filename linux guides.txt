@@ -1,0 +1,27 @@
+NFS-Server and NFS-Client. video : https://www.youtube.com/watch?v=hC7QNtID4-4
+
+
+Terminal Commands:
+-------------------------------------
+
+## Server:
+sudo apt install nfs-kernel-server nfs-common rpcbind
+sudo mkdir /var/nfs
+sudo mkdir /var/nfs/public
+sudo chmod 777 /var/nfs/public
+sudo vim /etc/exports
+# Hier folgendes einfügen:
+/var/nfs/public (rw,sync,no_subtree_check)
+
+sudo ufw allow nfs
+sudo reboot
+showmount -e 
+
+## Client:
+sudo mkdir /mnt/nfs-public
+sudo chmod 777 /mnt/nfs-public
+sudo apt install rpcbind nfs-common
+sudo mount Server-IP:/var/nfs/public /mnt/nfs-public
+
+sudo vim /etc/fstab # Hier einfügen:
+Server-IP:/var/nfs/public /mnt/nfs-public nfs rw 0 0  
