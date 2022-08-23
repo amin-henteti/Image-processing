@@ -5,6 +5,30 @@ https://www.lazytree.us/doku.php?id=b...
 https://www.lazytree.us/doku.php?id=p...
 I plan on restructuring the blog so please don't rely on the direct link
 
+https://github.com/ansible/ansible/issues/34284
+
+https://docs.microsoft.com/en-us/windows/win32/winrm/authentication-for-remote-connections
+
+0
+
+I create a cert mapping entry with this command:
+
+winrm create winrm/config/service/certmapping?Issuer=‎87d604dae22d91ee90f10a7dd91c33fc3093fd9b+Subject=PC01URI=* @{UserName="Administrator";Password="test123"}
+But how can I delete this entry?
+
+winrm delete winrm/config/service/certmapping?Issuer=‎87d604dae22d91ee90f10a7dd91c33fc3093fd9b+Subject=PC01+URI=*
+
+
+https://medium.com/@suraj0208/updating-acls-of-the-private-key-of-the-certificate-in-windows-certificate-store-2f83bbad827e
+
+https://www.codyhosterman.com/2019/06/assigning-read-access-to-windows-private-key/
+
+to avoid the CN check error (that is caused by self cert)
+
+we can add the cert to the trusted root cert authorities list on the remote server
+
+
+
 https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/smart-cards/smart-card-and-remote-desktop-services.md
 https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/smart-cards/smart-card-and-remote-desktop-services.md
 https://stackoverflow.com/questions/32968290/mapping-network-drive-with-smartcard-non-domain
